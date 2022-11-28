@@ -70,13 +70,11 @@ After you're finished please remove all the comments and instructions!
 
 > Describe between 1-3 key features of the application.
 
-- The project has been made using personalized ideas but following [design guidelines](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015) for colors, typography, and layout.
-- The project is done in plane CSS. No CSS framework has been used for styling.
-- Only **Home** and **About** page have been designed as per the requirement of the project.
-- Each of the pages have been adopted for 2 different screen sizes - **Mobile** *768px wide* and **Desktop** *768px or wider* as per the requirement.
-- Interactions (e.g., *Links* and *Mobile menu*) are put.
-- Dynamic page (*Featured Clubs*) is created using JavaScript.
-- Readme file has been adopted as per the requirements.
+- Add book title and author name with form submission.
+- The book titles and author names are stored in local storage.
+- Remove button removes books from the section.
+- Remove button removes specific data from local storage.
+- Refreshing the page puts the books from local storage in the page if there is any book in local storage.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -145,10 +143,9 @@ This website is applicable for both mobile and desktop version.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Pop-up sections with details for all the main programs**
-- [ ] **Schedule page for the project**
-- [ ] **More featured club details to randomize club names with each loading with JavaScript**
-- [ ] **Pop-up sections for each featured clubs with their past activities and contacts**
+- [ ] **Styling of the webpage**
+- [ ] **Animation to add or remove functionality**
+- [ ] **Adding responsiveness**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
