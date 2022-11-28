@@ -49,3 +49,43 @@ function add(bookTitle, authorName) {
   addBooks(i);
   i += 1;
 }
+
+/* Using local storage */
+
+const storedDataArray = [];
+
+function dataStore(index) {
+  const name = `name ${index}`;
+  localStorage.setItem(name, JSON.stringify(storedDataArray[index]));
+  keys.push(name);
+}
+
+let position = 0;
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const storedData = {
+    title: '',
+    author: '',
+  };
+  storedData.title = titleValue.value;
+  storedData.author = authorValue.value;
+  storedDataArray.push(storedData);
+  dataStore(position);
+  add(storedData.title, storedData.author);
+  position += 1;
+  titleValue.value = null;
+  authorValue.value = null;
+});
+
+if (JSON.parse(localStorage !== null)) {
+  for (let x = 0; x < localStorage.length; x += 1) {
+    const storedData = JSON.parse(localStorage.getItem(localStorage.key(x)));
+    if (storedData !== null) {
+      storedDataArray.push(storedData);
+      keys.push(localStorage.key(x));
+      add(storedData.title, storedData.author);
+      position += 1;
+    }
+  }
+}
