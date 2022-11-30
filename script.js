@@ -108,9 +108,6 @@ form.addEventListener('submit', (e) => {
   UI.clearInput();
   // add to storage
   Storage.addTodStorage(todoArr);
-/*   if (lists.classList.contains('hide')) {
-    lists.classList.remove('hide');
-  } */
 });
 
 // once the browser is loaded
